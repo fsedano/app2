@@ -2,17 +2,17 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: ng
-  name: ng
+    app: ng2
+  name: ng2
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ng
+      app: ng2
   template:
     metadata:
       labels:
-        app: ng
+        app: ng2
     spec:
       containers:
       - image: nginx
